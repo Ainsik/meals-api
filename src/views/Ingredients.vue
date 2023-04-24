@@ -29,6 +29,7 @@ import { onMounted, ref } from "vue";
 import { useRouter } from "vue-router";
 import axiosClient from "../axiosClient";
 import store from "../store";
+
 const router = useRouter();
 const keyword = ref("");
 const ingredients = ref([]);
@@ -38,6 +39,7 @@ const computedIngredients = computed(() => {
     i.strIngredient.toLowerCase().includes(keyword.value.toLowerCase())
   );
 });
+
 function openIngredient(ingredient) {
   store.commit("setIngredient", ingredient);
   router.push({
@@ -45,6 +47,7 @@ function openIngredient(ingredient) {
     params: { ingredient: ingredient.strIngredient },
   });
 }
+
 onMounted(() => {
   axiosClient.get("list.php?i=list").then(({ data }) => {
     ingredients.value = data.meals;

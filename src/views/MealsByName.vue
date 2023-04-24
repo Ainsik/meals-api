@@ -13,7 +13,6 @@
       @change="searchMeals"
     />
   </div>
-
   <Meals :meals="meals" />
 </template>
 
@@ -35,6 +34,7 @@ function searchMeals() {
     store.commit("setSearchedMeals", []);
   }
 }
+
 onMounted(() => {
   keyword.value = route.params.name;
   if (keyword.value) {

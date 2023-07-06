@@ -6,7 +6,7 @@
 </template>
 
 <script setup>
-import { computed, onMounted, ref } from "vue";
+import { onMounted, ref } from "vue";
 import Meals from "../components/Meals.vue";
 import axiosClient from "../axiosClient.js";
 

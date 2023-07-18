@@ -1,9 +1,7 @@
 # Meals receipt search app built with Vue + Vite
 
-The Meals API in Vue.js is a powerful and user-friendly application for searching meals. It
-serves as a central hub for retrieving detailed information about various meals,
-including their names, ingredients, preparation instructions and even accompanying
-images.
+The Meals API is a powerful, user-friendly meals searching application. It
+servesas a central hub for retrieving detailed information about various meals,including their names, ingredients, preparation instructions and evenaccompanying images.
 
 ## Features
 

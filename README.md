@@ -3,6 +3,8 @@
 The Meals API is a powerful, user-friendly meals searching application. It
 servesas a central hub for retrieving detailed information about various meals,including their names, ingredients, preparation instructions and evenaccompanying images.
 
+### [Demo](https://meals-api-eta.vercel.app/)
+
 ## Features
 
 - Retrieve a list of meals based on category, cuisine, or dietary restrictions.
